@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!--  every html file needs to start and end with html-->
+<html>
+<!-- head tag used to load files -->
+<head>
+    <!-- title is the name of the document -->
+    <title>Palestine Land Demographics</title>
+    <!-- Ensured proper rendering and touck zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- reference the CSS for superslides; href is where you put the file path -->
+    <link rel="stylesheet" type="text/css" href="CSS/superslides.css">
+    <!-- owl carousel css, and css for dots -->
+    <link rel="stylesheet" type="text/css" href="CSS/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="CSS/owl.theme.green.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <!-- FancyBox css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Reference to style.css -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<!-- content of site goes into body tag -->
+<body>
+    <!-- loader for the website (spnning wheel of death!) -->
+    <div class="loader">
+        <div class="inner"></div>
+    </div>
+
+    <div id="slides">
+
+        <div class="overlay"></div>
+
+        <div class="slides-container">
+          <img src="IMG/Hebron.jpg" alt="">
+          <img src="IMG/Jerusalem.jpg" alt="">
+          <img src="IMG/Jaffa.jpg" alt="">
+        </div>
+
+        <div class="titleMessage">
+            <div class="heading">
+                   <p class="main">PALESTINIAN LAND DEMOGRAPHICS</p>
+                   <p class="sub typed"></p>
+            </div>
+
+        </div>
+        <!-- Next and Previous buttons -->
+        <nav class="slides-navigation">
+            <a href="#" class="next"></a>
+            <a href="#" class="prev"></a>
+        </nav>
+    </div>
+    <!-- From Bootstrap -->
+    <nav id="navigation" class="navbar navbar-expand-lg"> 
+        <a class="navbar-brand" href="#">Menu</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#charts">Charts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stats">Statistics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#maps">Maps</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div id="about" class="section">
+        <div class="container">
+
+
+            <div class="row">
+                <!-- Using Bootstrap grid system; col must add up to 12, 5+7 -->
+                <div class="col-md-5">
+                    <h4>Palestinian Land Demographics Map</h4>
+                    <p>This mapping project provides statistics and an interactive map that gauges Palestinian developed land within the Districts of Israel and Area C of the West Bank as well as Palestinian controlled land in the Gaza Strip and Areas A and B in the Governorates of the West Bank. The aim in the West Bank is to assess Palestinian land control and development in different regions that adhere to the Oslo II Agreement Jurisdiction Borders, for the best experience inside the West Bank keep the Oslo Agreement Jurisdiction Borders layer turned on in order to visualize Palestinian developed land in Area C. </p>
+                    <p>This interactive map also includes a Palestinian communities layer, Palestinian Land that is developed in the Seam Zone, Israel Proper, land controlled in the Gaza Strip as well as boundaries for the Governorates of Palestine and the Districts of Israel.</p>
+                    <p>Updates occur around every month due to changes in the satellite imagery or changes from facts on the ground. Information comes from various human rights groups as well as the Palestinian and Israeli media.</p>
+
+                </div>
+
+                <div class="col-md-7">
+                    <iframe id= "mapframe" src="https://www.arcgis.com/apps/instant/basic/index.html?appid=cea96748e8cc4f5e9171b8f967ee60cc" width="600" height="500" frameborder="3" style="border:2px; border-color: #55872f" allowfullscreen allow="fullscreen">iFrames are not supported on this page.</iframe>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="charts" class="chartsSection section">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+                    <h2>PALESTINIAN LAND STATISTICS</h2>
+                    <p>A representation (Sqmi) of Palestinian controlled/developed land (Updated December 2023)</p>
+                </div>
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/HebronPieChart.jpg" alt="">
+                                <h4>Hebron Governorate</h4>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/BethlehemPieChart.jpg" alt="">
+                                <h4>Bethlehem Governorate</h4>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/JerusalemGovNoEJPieChart.jpg" alt="">
+                                <h4>Jerusalem Governorate</h4>
+                                <p>East Jerusalem not included</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/JerichoPieChart.jpg" alt="">
+                                <h4>Jericho Governorate</h4>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/RamallahPieChart.jpg" alt="">
+                                <h4>Ramallah Governorate</h4>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/SalfitPieChart.jpg" alt="">
+                                <h4>Salfit Governorate</h4>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/QalqiliyaPieChart.jpg" alt="">
+                                <h4>Qalqiliya Governorate</h4>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/NablusPieChart.jpg" alt="">
+                                <h4>Nablus Governorate</h4>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/TubasPieChart.jpg" alt="">
+                                <h4>Tubas Governorate</h4>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/TulkarmPieChart.jpg" alt="">
+                                <h4>Tulkarm Governorate</h4>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="chart">
+                                <img src="IMG/JeninPieChart.jpg" alt="">
+                                <h4>Jenin Governorate</h4>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="stats" class="statsSection section">
+        <div class="container">
+
+            <div class="row">
+                <!-- Area A -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer squareInnerContainerAreaA">
+
+                            <div class="squareIcon">
+                                <i class="fa-solid fa-a" style="color: #999393;"></i>
+                            </div>
+
+                            <div class="squareContent">
+                                <h2 class="counter">99.98</h2>
+                                <h3>of Area A (Palestinian admin and police control)</h3>
+                                <h3>in compliance of Oslo II</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Area B -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer squareInnerContainerAreaB">
+
+                            <div class="squareIcon">
+                                <i class="fa-solid fa-b" style="color: #c2185b;"></i>
+                            </div>
+
+                            <div class="squareContent">
+                                <h2 class="counter">99.96</h2>
+                                <h3>of Area B (Palestinian admin and Israeli security control)</h3>
+                                <h3>in compliance with Oslo II</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Area C -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer squareInnerContainerAreaC">
+
+                            <div class="squareIcon">
+                                <i class="fa-solid fa-c" style="color: #55872f;"></i>
+                            </div>
+
+                            <div class="squareContent">
+                                <h2 class="counter">28.66</h2>
+                                <h3>of Area C (Israeli civil and military control)</h3>
+                                <h3>developed by Palestinians</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Nature Reserve -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer squareInnerContainerNatureReserve">
+
+                            <div class="squareIcon">
+                                <i class="fa-solid fa-tree" style="color: #fff04c;"></i>
+                            </div>
+
+                            <div class="squareContent">
+                                <h2 class="counter">99.98</h2>
+                                <h3>of the Nature Reserve</h3>
+                                <h3>in compliance with the Wye River Memorandum</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <!-- Area H1 -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer squareInnerContainerAreaH1">
+
+                            <div class="squareIcon squareIcon1">
+                                <i class="fa-solid fa-h" style="color: #999393;"></i>
+                            </div>
+                            <div class="squareIcon squareIcon2">
+                                <i class="fa-solid fa-1" style="color: #999393;"></i>
+                            </div>
+
+                            <div class="squareContent">
+                                <h2 class="counter">99.99</h2>
+                                <h3>of Area H1 (Hebron special case)</h3>
+                                <h3>under Palestinian administrative and police control</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Area H2 -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer squareInnerContainerAreaH2">
+
+                            <div class="squareIcon squareIcon1">
+                                <i class="fa-solid fa-h" style="color: #815ed3;"></i>
+                            </div>
+                            <div class="squareIcon squareIcon2">
+                                <i class="fa-solid fa-2" style="color: #815ed3;"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">98.55</h2>
+                                <h3>of Area H2 (Hebron special case)</h3>
+                                <h3>(Israeli security control)</h3>
+                                <h3>developed by Palestinians</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- East Jerusalem -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer squareInnerContainerEastJerusalem">
+
+                            <div class="squareIcon3">
+                                <i class="fa-solid fa-e" style="color: #55872f;"></i>
+                            </div>
+                            <div class="squareIcon4">
+                                <i class="fa-solid fa-j" style="color: #55872f;"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">54.52</h2>
+                                <h3>of East Jerusalem (Israeli civil and security control)</h3>
+                                <h3>developed by Palestinians</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Israel Proper -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer squareInnerContainerIsraelProper">
+
+                            <div class="squareIcon3">
+                                <i class="fa-solid fa-i" style="color: #55872f;"></i>
+                            </div>
+                            <div class="squareIcon4">
+                                <i class="fa-solid fa-p" style="color: #55872f;"></i>
+                            </div>
+
+                            <div class="squareContent">
+                                <h2 class="counter">5.84</h2>
+                                <h3>of Israel Proper (recognized Israeli sovereign control)</h3>
+                                <h3>developed by Palestinians</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact" class="contactSection section">
+        <div class="col-md-12 text-center">
+            <p class="subHeading"> Please let us know if you have any improvements or corrections that we can make.</p>
+            <h2>We want this to be as accurate as possible!</h2>
+            <!-- Remember to add email here -->
+            <a href="mailTo:admin@palidemographics.org" class="contactButton">CONTACT US!</a>
+        </div>
+    </div>
+
+    <div id="maps" class="section">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="heading">
+                    <h2>MAPS</h2>
+                </div>
+                <div class="filter">
+                    <!-- Unordered List -->
+                    <ul id="filters">
+                        <!-- List, data-filter (from Isotope) -->
+                        <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                        <li><a href="#" data-filter=".maps">Maps</a></li>
+                        <li><a href="#" data-filter=".westBank">West Bank</a></li>
+                        <!-- Israel Proper -->
+                        <li><a href="#" data-filter=".comingSoon">Coming Soon</a></li>
+                    </ul>
+                </div>
+
+                <div class="itemsContainer">
+                    <ul class="items">
+                        <!-- class corresponds to data-filter, xs is for phones, sm tablets, md desktops, lg large desktops (enables more dynamic and flexible layouts)-->
+                        <!-- Hebron -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3 ">
+                                <div class="item">
+
+                                    <img src="IMG/Thumbnails/Hebron.jpg" alt="">
+
+                                    <div class="icons">
+                                        <!-- Search Icon -->
+                                        <!-- Inside href put the file link  to the real image-->
+                                        <a href="IMG/Thumbnails/Hebron Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Hebron Governorate in the West Bank">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <!-- Link Icon target blank means that it opens in a new tab -->
+                                        <a href="IMG/Thumbnails/Hebron Layout.jpg" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+
+                                        <div class="imageOverlay"></div>
+
+                                </div>
+                        </li>
+                        
+                        <!-- Bethlehem -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Bethlehem.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Bethlehem Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Bethlehem Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Bethlehem Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                    
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+                        
+                        <!-- Jerusalem Governorate -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Jerusalem.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Jerusalem_G Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Jerusalem Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Jerusalem_G Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+                        
+                        <!-- Jericho -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Jericho.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Jericho Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Jericho Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Jericho Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+                        
+                        <!-- Ramallah -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Ramallah.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Ramallah Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Ramallah Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Ramallah Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                    
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+                        
+                        <!-- Salfit -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Salfit.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Salfit Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Salfit Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Salfit Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+                        
+                        <!-- Qalqiliya -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Qalqiliya.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Qalqiliya Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Qalqiliya Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Qalqiliya Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+                        
+                        <!-- Tulkarm -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Tulkarm.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Tulkarm Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Tulkarm Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Tulkarm Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+                        
+                        <!-- Nablus -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Nablus.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Nablus Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Nablus Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Nablus Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+                        
+                        <!-- Tubas -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Tubas.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Tubas Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Tubas Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Tubas Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+                        
+                        <!-- Jenin -->
+                        <li onclick="" class="maps col-xs-6 col-sm-4 col-md-3 col-lg-3 westBank col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+
+                                <img src="IMG/Thumbnails/Jenin.jpg" alt="">
+
+                                <div class="icons">
+                                    <!-- Search Icon -->
+                                    <!-- Inside href put the file link  to the real image-->
+                                    <a href="IMG/Thumbnails/Jenin Layout.jpg" title="View more detailed map" class="openButton" data-fancybox data-caption="This is a demographics map of the Jenin Governorate in the West Bank">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- Link Icon target blank means that it opens in a new tab -->
+                                    <a href="IMG/Thumbnails/Jenin Layout.jpg" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="imageOverlay"></div>
+                                        
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="copyrightSection">
+
+        <div class="col-md-12 text-center">
+            <p>&copy; Copyright Palestinian Land Demographics 2024. </p>
+            <a target="_blank" href="https://icons8.com/icon/"></a> Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </div>
+        
+    </div>
+
+    <!-- Reference the javascript for superslides -->
+    <script src="JavaScript/jquery.superslides.js"></script>
+     <!-- Reference for countUp.js and jquery-->
+    <script src="JavaScript/countUp.js"></script>
+    <script src="JavaScript/countUp-jquery.js"></script>
+     <!-- Reference for owl.carousel.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Reference for Isotope, if you are going to make money off of this website you have to buy it -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Reference for typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Reference for Bootstrap Popper & Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Reference for fancybox js, if you are going to make money off of this website you have to buy it -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!--  Reference for script.js file -->
+    <script src="JavaScript/script.js"></script>
+
+</body>
+</html>
