@@ -28,11 +28,11 @@ body {
 }
 .slides-navigation a.prev {
     left: 20px;
-    background-image: url(../Icons/Previous_Icon.png);
+    background-image: url(https://mappykk.github.io/palidemographicswebsite/Previous_Icon.png);
 }
 .slides-navigation a.next {
     right: 20px;
-    background-image: url(../Icons/Next_Icon.png);
+    background-image: url(https://mappykk.github.io/palidemographicswebsite/Next_Icon.png);
 }
 .titleMessage {
     position: absolute;
@@ -450,7 +450,7 @@ body {
     color: #fff;
 }
 .navbar-toggler-icon {
-    background: url(../Icons/Menu_Icon.png);
+    background: url(https://mappykk.github.io/palidemographicswebsite/Menu_Icon.png);
     background-size: 100%;
 }
 /* Applies the fixed Navigation bar allowing it to move down on scroll */
@@ -471,7 +471,7 @@ body {
     width: 100%;
     height: 100%;
     /* Vertically and horizontally centered (middle of the screen), no repeats so it wont repeat itself to fill the available space  */
-    background: url(../IMG/loader.gif) center center no-repeat;
+    background: url(https://mappykk.github.io/palidemographicswebsite/loader.gif) center center no-repeat;
 }
 
 #mapframe {
