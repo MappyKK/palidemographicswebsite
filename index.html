@@ -25,7 +25,7 @@
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+	
 </head>
 <!-- content of site goes into body tag -->
 <body>
@@ -96,13 +96,14 @@
                 <div class="col-md-5">
                     <h4>Palestinian Land Demographics Map</h4>
                     <p>This mapping project provides statistics and an interactive map that gauges Palestinian developed land within the Districts of Israel and Area C of the West Bank as well as Palestinian controlled land in the Gaza Strip and Areas A and B in the Governorates of the West Bank. The aim in the West Bank is to assess Palestinian land control and development in different regions that adhere to the Oslo II Agreement Jurisdiction Borders, for the best experience inside the West Bank keep the Oslo Agreement Jurisdiction Borders layer turned on in order to visualize Palestinian developed land in Area C. </p>
-                    <p>This interactive map also includes a Palestinian communities layer, Palestinian Land that is developed in the Seam Zone, Israel Proper, land controlled in the Gaza Strip as well as boundaries for the Governorates of Palestine and the Districts of Israel.</p>
+                    <p>This interactive map also includes a Palestinian communities layer, Palestinian Land that is developed in the Seam Zone(dark blue), Israel Proper (green), East Jerusalem (green), land controlled in the Gaza Strip (green) as well as boundaries for the Governorates of Palestine and the Districts of Israel.</p>
                     <p>Updates occur around every month due to changes in the satellite imagery or changes from facts on the ground. Information comes from various human rights groups as well as the Palestinian and Israeli media.</p>
 
                 </div>
 
                 <div class="col-md-7">
-                    <iframe src="https://www.arcgis.com/apps/instant/basic/index.html?appid=cea96748e8cc4f5e9171b8f967ee60cc"  border="0" frameborder="0" style="border-style:none;box-shadow:0px 0px 2px 2px rgba(0,0,0,0.2);width:600px;height:500px;" cellspacing="0"> <p>Your browser does not support iframes.</p></iframe>
+                  	
+                    <iframe id= "mapframe" src="https://www.arcgis.com/apps/instant/basic/index.html?appid=cea96748e8cc4f5e9171b8f967ee60cc" width="600" height="500" frameborder="0" style="border:2px; border-color: #55872f; box-shadow:0px 0px 2px 2px rgba(0,0,0,0.2);" allowfullscreen><p>Your browser does not support iframes.</p></iframe>
                     
                 </div>
             </div>
@@ -118,6 +119,7 @@
                 <div class="col-md-12 text-center">
                     <h2>PALESTINIAN LAND STATISTICS</h2>
                     <p>A representation (Sqmi) of Palestinian controlled/developed land (Updated December 2023)</p>
+                    <p>*Undeveloped land and Israeli developed land in Area C are currently not included</p>
                 </div>
 
                     <div class="owl-carousel owl-theme">
@@ -382,7 +384,7 @@
 
                             <div class="squareContent">
                                 <h2 class="counter">5.84</h2>
-                                <h3>of Israel Proper (recognized Israeli sovereign control)</h3>
+                                <h3>of Israel Proper (internationally recognized borders of Israel)</h3>
                                 <h3>developed by Palestinians</h3>
                             </div>
 
