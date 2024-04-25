@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>2D Map</title>
+
+<link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+<script src="https://js.arcgis.com/4.26/"></script>
+<style>
+html, body, #viewDiv { 
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    box-shadow: 10px 10px 5px grey;
+}
+</style>
+
+<script>
+    require([
+    "esri/WebMap",
+    "esri/views/MapView",
+    "esri/widgets/Search",
+    "esri/widgets/BasemapGallery",
+    "esri/widgets/Legend",
+    "esri/widgets/Expand",
+    "esri/widgets/Search/LayerSearchSource"
+    ], function(WebMap, MapView, Search, BasemapGallery, Legend, Expand, LayerSearchSource) {
+
+        var map = new WebMap({
+            portalItem: { // autocasts as new PortalItem()
+            // id for Palestinian Land Demographics Map
+            id: "0117adf6203e4fb78116a9f6b371e5d7",
+            }
+        });
+
+        var view = new MapView({
+            map: map,
+            container: "viewDiv"
+        });
+        // Wait for the map to load
+        map.when(function() {
+            // Get the Communities layer from the map
+            var communitiesLayer = map.allLayers.find(function(layer) {
+                return layer.title === "Communities"; 
+            });
+
+            const searchWidget = new Search({
+                view: view,
+                allPlaceholder: "Search Communities",
+                includeDefaultSources: false,
+                sources: [
+                    {
+                        layer: communitiesLayer, 
+                        searchFields: ["Name"],
+                        displayField: "Name",
+                        exactMatch: false,
+                        outFields: ["NAME"],
+                        name: "Communities",
+                        placeholder: "example: Jerusalem"
+                    }
+                ]
+            });
+
+            // Add widget to the UI
+            view.ui.add(searchWidget, "top-right");
+        });
+
+        
+        var basemapGallery = new BasemapGallery({
+            view: view
+        });
+        
+        var basemapExpand = new Expand ({
+            content: basemapGallery,
+            view: view
+        });
+
+        view.ui.add(basemapExpand, "bottom-right");
+
+        var legendExpand = new Expand({
+            view: view,
+            content: new Legend({
+            view: view
+            }),
+            expanded: view.widthBreakpoint !== "xsmall"
+        });
+        view.ui.add(legendExpand, "bottom-left");
+
+    });
+</script>
+</head>
+<body>
+<div id="viewDiv"></div>
+</body>
+</html>
