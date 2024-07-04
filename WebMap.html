@@ -24,8 +24,9 @@ html, body, #viewDiv {
     "esri/widgets/BasemapGallery",
     "esri/widgets/Legend",
     "esri/widgets/Expand",
-    "esri/widgets/Search/LayerSearchSource"
-    ], function(WebMap, MapView, Search, BasemapGallery, Legend, Expand, LayerSearchSource) {
+    "esri/widgets/Search/LayerSearchSource",
+    "esri/widgets/LayerList"
+    ], function(WebMap, MapView, Search, BasemapGallery, Legend, Expand, LayerSearchSource, LayerList) {
 
         var map = new WebMap({
             portalItem: { // autocasts as new PortalItem()
@@ -86,6 +87,21 @@ html, body, #viewDiv {
             expanded: view.widthBreakpoint !== "xsmall"
         });
         view.ui.add(legendExpand, "bottom-left");
+        
+        // Create LayerList
+        let layerList = new LayerList({
+            view: view,
+        });
+
+        // Create Expand widget with LayerList 
+        let layerListExpand = new Expand({
+            expandIconClass: "esri-icon-layer-list", 
+            view: view,
+            content: layerList
+        });
+
+        // Add Expand widget to the UI
+        view.ui.add(layerListExpand, "bottom-right");
 
     });
 </script>
