@@ -114,20 +114,20 @@ body {
 }
 
 .squareInnerContainerAreaA {
-    border: 2px solid #999393;
+    border: 2px solid #8e996f;
     border-top: none; 
 }
 .squareInnerContainerAreaA:before,
 .squareInnerContainerAreaA:after {
-    border-bottom: 2px solid #999393;
+    border-bottom: 2px solid #8e996f;
 }
 .squareInnerContainerAreaB {
-    border: 2px solid #c2185b;
+    border: 2px solid #a6d785;
     border-top: none; 
 }
 .squareInnerContainerAreaB:before,
 .squareInnerContainerAreaB:after {
-    border-bottom: 2px solid #c2185b;
+    border-bottom: 2px solid #a6d785;
 }
 .squareInnerContainerAreaC {
     border: 2px solid #55872f;
@@ -146,20 +146,20 @@ body {
     border-bottom: 2px solid #fff04c; 
 }
 .squareInnerContainerAreaH1 {
-    border: 2px solid #999393;
+    border: 2px solid #fcb041;
     border-top: none; 
 }
 .squareInnerContainerAreaH1:before,
 .squareInnerContainerAreaH1:after {
-    border-bottom: 2px solid #999393;
+    border-bottom: 2px solid #fcb041;
 }
 .squareInnerContainerAreaH2 {
-    border: 2px solid #815ed3;
+    border: 2px solid #ffc20f;
     border-top: none; 
 }
 .squareInnerContainerAreaH2:before,
 .squareInnerContainerAreaH2:after {
-    border-bottom: 2px solid #815ed3;
+    border-bottom: 2px solid #ffc20f;
 }
 .squareInnerContainerEastJerusalem {
     border: 2px solid #55872f;
@@ -480,3 +480,4 @@ body {
     height: 500px;
     max-height: 100%;
 }
+
